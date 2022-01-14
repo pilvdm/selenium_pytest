@@ -20,6 +20,5 @@ def test_gumtree_search(browser):
     assert len(gumtree_elements) > 0
     for i in gumtree_elements:
         title = google_main_page.verify_title(i)
-        # print(title)
         assert title
 

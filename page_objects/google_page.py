@@ -1,5 +1,5 @@
 """
-This is a page object for GOOGLE title and search pages united??ASDASD
+This is a page object for GOOGLE title and search pages united (for simplicity)
 """
 
 
@@ -35,6 +35,7 @@ class SearchHelper(BasePage):
         all_links = [x.get_attribute('href') for x in all_search_results]
         return all_links
 
+    # Helper to google the exact keyword
     def google_word(self, word):
         self.go_to_site()
         self.enter_word(word)
